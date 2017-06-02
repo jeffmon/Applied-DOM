@@ -191,6 +191,9 @@
    * to set the context to the btn10 object
    */
 
+   var setLight10Green = setMyLightGreen.bind(btn10);
+
+
 
   /*
    * Add a click event listener to btn10
@@ -198,6 +201,10 @@
    * the body of the event handler function
    * will invoke the setLight10Green function
    */
+
+   btn10.addEventListener("click", function(){
+    setLight10Green();
+   });
 
 
   /*
